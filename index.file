@@ -1,0 +1,15 @@
+pipeline{
+    agent { label "slave15"}
+    stages{
+        stage{
+            steps{
+                checkout scm
+            }
+        }
+        stage{
+            steps{
+                sh "cp /var/lib/jenkins/workspace/pipe/index.html /var/www/html/"
+            }
+        }
+    }
+}
