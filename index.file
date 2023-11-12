@@ -1,15 +1,9 @@
-pipeline{
-    agent { label "slave15"}
-    stages{
-        stage{
-            steps{
-                checkout scm
-            }
-        }
-        stage{
-            steps{
-                sh "cp /var/lib/jenkins/workspace/pipe/index.html /var/www/html/"
-            }
-        }
-    }
-}
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
